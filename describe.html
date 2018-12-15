@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>210天计划</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/describe.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset-min.css" />
+		<!-- <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-2.1.1.min.js"></script> -->
+		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/weui.min.css" />
+		<script type="text/javascript">
+			document.documentElement.style.fontSize = document.documentElement.clientWidth / 445 * 100 + 'px';
+		</script>
+		<script>
+			$(document).ready(function() {
+								$(".thirdRight").click(function() {
+				// 					 
+				// 					//弹出一个询问框，有确定和取消按钮  
+				// 					
+				// 						//利用对话框返回的值 （true 或者 false）  
+				// 						if (confirm("你确定购买吗？")) {
+				// 							//alert("购买成功");
+				// 							//top.window.location("http://xuguangqiao.top/shici/reading.html?openid=123");
+				// // 							var obj = document.getElementById('links');
+				// // 							obj.href = "http://xuguangqiao.top/shici/reading.html?openid=123";
+				// // 							obj.click();
+				// 							$("#links").attr("href","http://xuguangqiao.top/shici/reading.html?openid=123"); 
+				// 							$("#links").click();
+				// 						} else {
+				// 							// alert("点击了取消");
+				// 						}
+				// 
+				// 					
+										$(".weui-dialog").toggle();
+								});
+					
+			});//文档加载完毕
+
+			function runTo() {
+				// window.location.replace("http://127.0.0.1:8848/shici/reading.html?openid=123");
+				 window.location.replace(baseUrl);
+				window.history.back(-1);
+
+			};
+
+			function displayThis() {
+				$(".weui-dialog").toggle();
+			};
+
+			function Request(strName) {
+				var strHref = location.href;
+				var intPos = strHref.indexOf("?");
+				var strRight = strHref.substr(intPos + 1);
+				var arrTmp = strRight.split("&");
+				for (var i = 0; i < arrTmp.length; i++) {
+					var arrTemp = arrTmp[i].split("=");
+					if (arrTemp[0].toUpperCase() == strName.toUpperCase()) return arrTemp[1];
+				}
+				return "";
+			}
+
+			var x=Request(("openid"));
+			var baseUrl = 'http://127.0.0.1:8848/shici/reading.html';
+			if (x !== null && x !== undefined && x!== ''){
+			    baseUrl = baseUrl + '?openid=' + x;
+			}
+		</script>
+	</head>
+	<body>
+		<div class="first">
+			<img src="img/bluewhite.png">
+		</div>
+
+		<div class="second">
+			<p>课程介绍</p>
+			<p>描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</p>
+		</div>
+
+		<div class="third">
+			<div class="thirdLeft">
+				原价149元
+			</div>
+			<div class="thirdCenter">
+				限时优惠<span>99</span>元/期
+			</div>
+			<div class="thirdRight">
+				立即购买
+			</div>
+		</div>
+		<!-- <a id='links' href="http://xuguangqiao.top/shici/reading.html?openid=123" style='display:none;'></a> -->
+		 <div class="weui-dialog" style="display: none;">
+			<div class="weui-dialog__hd"><strong class="weui-dialog__title">确认购买</strong></div>
+			<div class="weui-dialog__bd">确认支付押金99元，打卡完成全额回退</div>
+			<div class="weui-dialog__ft">
+				<a href="javascript:displayThis();" class="weui-dialog__btn weui-dialog__btn_default">取消</a>
+				<a href="javascript:runTo();" class="weui-dialog__btn weui-dialog__btn_primary">购买</a>
+			</div>
+		</div>
+	</body>
+</html>

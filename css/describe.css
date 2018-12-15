@@ -1,0 +1,89 @@
+
+.first {
+	height: 4.65rem;
+	background-color: #e1e8f0;
+	width: 100%;
+	text-align: center;
+}
+
+.first img {
+	width: 4.05rem;
+	height: 4.05rem;
+	margin: 0.3rem auto;
+}
+
+
+.second{
+	width: 100%;
+	background-color: #2b2157;
+	text-align: center;
+	font-size: 0.16rem;
+	position: absolute;
+    top: 4.65rem;
+	bottom: 0;
+
+}
+.second p:first-child{
+	padding: 0.36rem;
+	font-size: 0.16rem;
+	color: white;
+}
+
+.third{
+	width: 100%;
+	height: 0.4rem;
+	position:fixed;
+	left:0;
+	bottom:0;
+	background-color: white;
+}
+.thirdLeft{
+	width: 30%;
+	height: 0.4rem;
+	font-size: 0.22rem;
+	float: left;
+	color: gray;
+	text-decoration:line-through;
+	line-height: 0.4rem;
+	text-align: center;
+}
+
+.thirdCenter{
+	width: 50%;
+	height: 0.4rem;
+	color: #18a2d9;
+	float: left;
+	font-size: 0.22rem;
+	line-height: 0.4rem;
+	/* padding-right: 0.17rem; */
+	text-align: right;
+	margin-left: -0.1rem;
+	
+}
+	
+.thirdCenter span{
+	font-size: 0.25rem;
+	margin: 0 0.08rem;
+	font-weight: bold;
+}
+
+.thirdRight{
+	width: 20%;
+	height: 0.4rem;
+	background-color: #18a2d9;
+	float: left;
+	margin-left: 0.1rem;
+	line-height: 0.4rem;
+	font-size: 0.22rem;
+	text-align: center;
+	color: white;
+}
+
+.thirdRight a{
+	text-decoration:none
+out-line: none;
+color: white;
+}
+.weui-dialog{
+	font-size: 0.22rem;
+}

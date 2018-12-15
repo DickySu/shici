@@ -1,0 +1,145 @@
+/*设置header*/
+#header{
+	background-color: #81d732;
+	height: 66px;
+	width: 100%;
+}
+
+.left{
+	float: left;
+	padding: 13px 30px;
+	
+}
+.left  img{
+	float: left;
+	width: 40px;
+	height: 40px;
+}
+.left span{
+	font-family: MicrosoftYaHei ,Microsoft YaHei;
+	float: left;
+	margin-left: 22px;
+	line-height: 40px;
+	font-size: 27px;
+	color: white;
+}
+
+.right{
+	float: right;
+	padding: 20px 30px;
+	
+}
+.right img{
+	width: 26px;
+	height: 26px;
+
+}
+
+
+.learnTitle {
+	height: 46px;
+	margin: 70px auto;
+	 text-align:center;
+}
+
+.learnTitle span{
+	font-family: MicrosoftYaHei ,Microsoft YaHei;
+	font-size: 50px;
+	color: #0099FF;
+}
+
+.welcomeTitle {
+	height: 46px;
+	margin: 90px auto;
+	 text-align:center;
+}
+
+.welcomeTitle span{
+	font-family: MicrosoftYaHei ,Microsoft YaHei;
+	font-size: 80px;
+	color: #FE767D;
+}
+
+.brLine{
+	margin-top: 80px;
+	height: 60px;
+	text-align: center;
+}
+
+.brLine > img{
+	margin: 0 auto;
+}
+
+
+.xunlianying {
+	height: 46px;
+	margin: 20px auto;
+	 text-align:center;
+}
+
+.xunlianying span{
+	font-family: MicrosoftYaHei ,Microsoft YaHei;
+	font-size: 40px;
+	color: #FE767D;
+}
+
+.wcode{
+	margin-top: 80px;
+	text-align: center;
+}
+
+.wcode > img{
+	margin: 0 auto;
+}
+
+.longClick {
+	height: 46px;
+	margin: 40px auto;
+	text-align:center;
+}
+
+.longClick span{
+	font-family: MicrosoftYaHei ,Microsoft YaHei;
+	font-size: 40px;
+	color: #FE767D;
+}
+
+.jiaqun{
+	height: 345px;
+	width: 100%;
+	position:fixed;
+    left:0px;
+    bottom:0;
+text-align: center;
+}
+
+.pinkblock{
+	height: 220px;
+	width: 86%;
+	margin: 30px 7%;
+	background-color: #FE767D;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	font-family: MicrosoftYaHei ,Microsoft YaHei;
+	letter-spacing: 5px;
+}
+
+.pinkblock p:first-child
+{
+	padding-top: 60px;
+	padding-bottom: 25px;
+}
+.jiaqunwenzi{
+	margin-bottom: 25px;
+ font-size: 40px;
+}
+.jiaqunwenzi p{
+	margin:0 auto;
+	text-align:center;
+}
+.jiaqunwenzi span{
+	color: red;
+	font-size: 40px;
+	height: 40px;
+}

@@ -1,0 +1,101 @@
+html,
+body {
+	height: 100%
+}
+
+.first {
+	background-color: #2b2157;
+	color: white;
+	padding-bottom: 1.3rem;
+}
+
+.headImg {
+
+	width: 3.8rem;
+	height: 2.3rem;
+	margin: 0 auto;
+}
+
+.headImg img {
+	width: 3.8rem;
+	height: 2.15rem;
+	margin-top: 0.15rem;
+}
+
+.poetryName {
+	font-size: 0.2rem;
+	text-align: center;
+	margin: 0.2rem auto;
+}
+
+#poetryZuozhe {
+	font-size: 0.2rem;
+	text-align: center;
+	margin: 0.2rem auto;
+}
+
+#poetry {
+	height: 1rem;
+	width: 3.8rem;
+	font-size: 0.17rem;
+	text-align: center;
+	margin: 0.15rem auto;
+	overflow: scroll;
+}
+
+.poetryDesc {
+	font-size: 0.2rem;
+	text-align: center;
+}
+
+.poetryDescDetail {
+	overflow: scroll;
+	height: 1rem;
+	width: 3.8rem;
+	font-size: 0.17rem;
+	text-align: center;
+	margin: 0.15rem auto;
+
+}
+
+.second {
+	height: 1rem;
+	width: 100%;
+	background-color: white;
+	position: fixed;
+	left:0;
+	bottom: 0rem;
+	margin: 0 auto;
+	font-size: 0.17rem;
+}
+.second .row{
+	width: 2.72rem;
+	height: 1rem;
+	margin: 0 auto;
+}
+
+.second img{
+	width: 0.5rem;
+	height: 0.5rem;
+}
+.second .item1{
+	float: left;
+	height: 0.9rem;
+	width: 0.9rem;
+	text-align: center;
+	margin-top: 0.1rem;
+}
+.second .item2{
+	float: left;
+	height: 0.9rem;
+	width: 0.9rem;
+	text-align: center;
+	margin-top: 0.1rem;
+}
+.second .item3{
+	float: left;
+	height: 0.9rem;
+	width: 0.9rem;
+	text-align: center;
+	margin-top: 0.1rem;
+}
