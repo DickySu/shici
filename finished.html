@@ -9,9 +9,14 @@
 		<title></title>
 	</head>
 	<body>
-		<div id="shareit" style="display:none;">
-			<img class="arrow" src="img/guide.png">
+		<!-- 用来显示的图片 -->
+		<div class="share_img">
+			<img src="img/guide.png">
+			
 		</div>
+
+		<!-- 最底下的蒙层 -->
+		<div class="bg"></div>
 		<div class="white">
 			<div class="userName">
 				用户名
@@ -44,12 +49,14 @@
 
 		//立即分享到微信朋友圈点击事件
 		$(".yellow").on("click", function() {
-			$("#shareit").show();
+			$(".bg").show();
+			$(".share_img").show();
 		});
 
 
-		$("#shareit").on("click", function() {
-			$("#shareit").hide();
+		$(".bg").on("click", function() {
+			$(this).hide();
+			$(".share_img").hide();
 		});
 	</script>
 </html>
